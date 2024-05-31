@@ -1,17 +1,15 @@
 import { createBrowserRouter } from 'react-router-dom'
 
 import { Fulampo } from './pages/app/fulampos'
-import { Home } from './pages/home/home'
+import { Home } from './pages/app/home'
 
 export const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />,
-    children: [
-      {
-        path: '/fulampos',
-        element: <Fulampo />,
-      },
-    ],
+  },
+  {
+    path: '/fulampo',
+    element: <Fulampo />,
   },
 ])
